@@ -1,0 +1,309 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.header {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search {
+    padding-top: 5px;
+}
+
+.pokemonOverview:hover {
+    cursor: pointer;
+}
+
+.outerFrame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.outerFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.outsideFrame {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemonCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: rgb(255, 85, 85);
+}
+
+
+#pokedex {
+    height: 43vh;
+    background-color: rgb(255, 85, 85);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+#pokedex h1 {
+    color: rgb(255, 251, 251);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    top: 10px;
+}
+
+#pokemonPicture {
+    z-index: +1;
+    top: -20px;
+    display: flex;
+    position: relative;
+}
+
+.info-container {
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -35px;
+    margin-bottom: -40px
+}
+
+.buttons {
+    height: 40px;
+    display: flex;
+    position: relative;
+    top: 70px;
+    justify-content: space-around;
+}
+
+.buttonDesign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+    /* Rote Umrandung */
+    color: rgb(0, 0, 0);
+    ;
+    /* Rote Schriftfarbe */
+    padding: 10px 20px;
+    /* Anpassen der Polsterung nach Bedarf */
+    font-size: 16px;
+    /* Anpassen der Schriftgröße nach Bedarf */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Übergangseffekt für den Hintergrund */
+    border-radius: 10px;
+}
+
+.buttonDesign:hover {
+    color: white;
+    background-color: rgb(184, 184, 184);
+}
+
+.info {
+    background-color: white;
+    color: black !important;
+}
+
+.information {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 100px;
+    height: 46vh;
+}
+
+.table {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+}
+
+.table tbody {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    width: 100%;
+}
+
+.tr {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.td {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+    border-bottom-width: 0 !important;
+
+}
+
+.progress {
+    width: 100%;
+}
+
+.statsName {
+    color: white;
+    color: black !important;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.bg-hp {
+    background-color: green !important;
+}
+
+.bg-attack {
+    background-color: red !important;
+    color: white !important;
+}
+
+.bg-defense {
+    background-color: black !important;
+}
+
+.bg-specialAttack {
+    background-color: blue !important;
+}
+
+.bg-specialDefense {
+    background-color: rgb(0, 226, 192) !important;
+}
+
+.bg-speed {
+    background-color: rgb(255, 115, 0) !important;
+}
+
+.pokemonOverview {
+    height: 25vh;
+    width: 25vh;
+    margin: 20px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pokemonlist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 1s;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+
+.pokemonlist img {
+    object-fit: cover;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.pokemonlist :hover {
+
+    transform: scale(1.07);
+    border-radius: 5px;
+}
+
+.loadMoreButton {
+    position: relative;
+    bottom: 30px;
+    border-radius: 100px;
+}
+
+.smallPokePic {
+    height: 100px !important;
+}
+
+.arrow {
+    cursor: pointer !important;
+}
+
+.arrow:hover {
+    transform: scale(1.07);
+    border-radius: 5px;
+    cursor: pointer !important;
+
+}
+
+.arrow-btn {
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer !important;
+}
+
+.home {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: grey;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer !important;
+}
+
+.home:hover {
+    transform: scale(1.07);
+    border-radius: 5px;
+    border-radius: 100%;
+    cursor: pointer !important;
+}
