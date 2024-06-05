@@ -38,7 +38,7 @@ async function fetchPokemonByURL(urlOfEachPokemon) {  // Und hier fetchen wir un
     return pokemon;
 }
 
-function renderPokemon(pokemon, i) {
+function renderPokemon(pokemon) {
 
     let type = pokemon['types'][0]['type']['name'];
     let backgroundColor = getColorForType(type);
@@ -79,7 +79,7 @@ function renderPokemonInfo(i) {
     outerFrame.innerHTML = `<div class="outerFrame">
     <div class="outsideFrame">
      <div class="home" onclick="backHome()">home</div>
-     <img src="leftArrow.jpg" onclick="leftArrow(${i})" class="arrow">
+     <img src="leftArrow.jpeg" onclick="leftArrow(${i})" class="arrow">
     </div>
     <div class="pokemonCard" style="background-color: ${backgroundColor};">
         <div id="pokedex" style="background-color: ${backgroundColor};">
@@ -97,7 +97,7 @@ function renderPokemonInfo(i) {
         <div id="information" class="info"></div>
     </div>
     <div class="outsideFrame">
-     <img src="rightArrow.jpg" onclick="rightArrow(${i})" class="arrow">
+     <img src="rightArrow.jpeg" onclick="rightArrow(${i})" class="arrow">
     </div>
     </div>`
 
@@ -314,7 +314,7 @@ async function searchPokemon() {
         const urlOfThisPokemon = await getPokemonByUrl(pokemonUrl);
 
         let name = urlOfThisPokemon.name.toLowerCase();
-        if (name.includes(search)) {
+        if (name.startsWith(search)) {
             loadedPokemons.push(urlOfThisPokemon);
             renderPokemon(urlOfThisPokemon); // Hier wird der Index korrekt verwendet
             pokemonCount++;

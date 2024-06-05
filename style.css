@@ -14,10 +14,37 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('background.webp');
+    background-position: 94% 40%;
+    object-fit:contain;
+    background-repeat: repeat;
 }
 
 .search {
     padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.searchInput{
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    border-color: #D1D1D1;
+    border-style: solid;
+}
+
+.searchBtn{
+    background-color: #345de2; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.searchBtn:hover{
+    background-color: #002dc0 ;
 }
 
 .pokemonOverview:hover {
@@ -225,6 +252,7 @@ body {
     align-items: center;
     flex-direction: column;
     position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -233,6 +261,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: lightgray;
+    
 }
 
 .pokemonlist {
@@ -251,7 +281,6 @@ body {
     height: 400px;
     margin: 10px;
     border-radius: 5px;
-
 }
 
 .pokemonlist :hover {
@@ -264,6 +293,14 @@ body {
     position: relative;
     bottom: 30px;
     border-radius: 100px;
+    background-color: #345de2; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    
 }
 
 .smallPokePic {
